@@ -15,37 +15,9 @@
     <hr class="my-4">
     <p>whether for Business or whether Pleasure, the Weather is Clever API has all the demographic you need! </p>
     <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-  </header>
+  
 </div> -->
 
-<section class="top-banner">
-  <div class="container">
-    <h1 class="heading">Simple Weather App</h1>
-    <form>
-      <input type="text" placeholder="Search for a city" autofocus>
-      <button type="submit">SUBMIT</button>
-      <span class="msg"></span>
-    </form>
-  </div>
-</section>
-<section class="ajax-section">
-  <div class="container">
-    <ul class="cities"></ul>
-  </div>
-</section>
-<li class="city">
-  <h2 class="city-name" data-name="...">
-    <span>...</span>
-    <sup>...</sup>
-  </h2>
-  <span class="city-temp">...<sup>°C</sup></span>
-  <figure>
-    <img class="city-icon" src="..." alt="...">
-    <figcaption>...</figcaption>
-  </figure>
-</li>
-<body>
-    
   <!-- Retrieved data will be dumped here -->
   <div class="city"></div>
   <div class="wind"></div>
@@ -55,10 +27,10 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript">
     // This is our API key. Add your own API key between the ""
-    var APIKey = "1360ea223402ae48ab8dbd11cb820b33";
+    var APIKey = "9bcf6a6fdf3dd15d2a8e12e5c63f22f8";
 
     // Here we are building the URL we need to query the database
-    var queryURL = "api.openweathermap.org/data/2.5/weather?q=Irvine,CA,USA&appid=" + APIKey;
+    var queryURL = "https://openweathermap.org/" + APIKey;
 
     // We then created an AJAX call
     $.ajax({
