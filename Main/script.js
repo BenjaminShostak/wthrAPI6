@@ -113,12 +113,10 @@ $(document).ready(function() {
           }
           
           $("#today .card-body").append(uv.append(btn));
+          document.querySelector("#search-button").addEventListener("click", getSearchVal);
         }
-  
+    });
         bodyEl.appendChild(uvEl);
         uvEl.appendChild(buttonEl);
-      });
-  }
-  
-  document.querySelector("#search-button").addEventListener("click", getSearchVal);
-  
+   
+  };
